@@ -61,7 +61,14 @@ permalink: /bes_example/
   <ul>
     <li> The monaural left+ right signals are generated using measured HRIRs from the Kayser Database [2] </li>
     <li> The speech signals are taken from the Dantale II [3] </li>
-    
+     <li> System Key: 
+     <ul>
+       <li> System 1: Noisy RM - Noisy signal received from the remote microphone (with a TDOA w.r.t. local HA microphone signals).</li>
+       <li> System 2: MWF Estimate - Local MWF output using only the HA microphone signals at given SNR.</li> 
+       <li> System 3: BESC Estimate - Proposed method using MWF and precited RM signal, for complex STFT coefficients. </li> 
+       <li> System 4: MSTSA Estimate- Local MSTSA output using only the HA microphone signals at given SNR.</li> 
+       <li> System 5: BESM Estimate- Proposed method using MSTSA and predicted RM, for magnitude STFT coefficients.</li>   
+     </li>    
   </ul>
 
 <p> This page was generated using <b> trackswitch.js </b> in [1].
